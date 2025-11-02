@@ -1,0 +1,74 @@
+body {
+    background: #f5f6fa;
+    color: #222;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0;
+}
+.jee-header, .jee-section, .jee-books, .iq-test {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+.jee-section, .jee-books, .iq-test {
+    background: #fff;
+    color: #222;
+    border-radius: 24px;
+    box-shadow: 0 8px 32px 0 rgba(44, 62, 80, 0.12), 0 1.5px 8px 0 rgba(0,0,0,0.08);
+    transition: box-shadow 0.3s;
+    margin-bottom: 32px;
+}
+.jee-section:hover, .jee-books:hover, .iq-test:hover {
+    box-shadow: 0 16px 48px 0 rgba(44, 62, 80, 0.18), 0 3px 16px 0 rgba(0,0,0,0.14);
+}
+.jee-section h2, .jee-books h2, .iq-test h2 {
+    color: #2d3436;
+    text-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
+}
+.jee-section li, .jee-books li, .iq-test label {
+    color: #222;
+    text-shadow: 0 1px 4px rgba(44, 62, 80, 0.04);
+}
+.jee-img, .jee-books-img, .header-img, .logo-img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    box-shadow: 0 4px 24px rgba(44, 62, 80, 0.10), 0 1.5px 8px rgba(0,0,0,0.08);
+    border-radius: 16px;
+    transition: box-shadow 0.3s;
+    background: #fff;
+}
+.jee-img:hover, .jee-books-img:hover, .header-img:hover, .logo-img:hover {
+    box-shadow: 0 8px 32px rgba(44, 62, 80, 0.18), 0 3px 16px rgba(0,0,0,0.14);
+}
+.national-logos {
+    justify-content: center;
+}
+.btn, .iq-test .btn {
+    background: #2d3436;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 28px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+    box-shadow: 0 2px 8px rgba(44, 62, 80, 0.10);
+}
+.btn:hover, .iq-test .btn:hover {
+    background: #636e72;
+    transform: scale(1.05);
+    box-shadow: 0 4px 16px rgba(44, 62, 80, 0.18);
+}
+/* Add subtle divider between sections */
+.jee-section:not(:last-child), .jee-books:not(:last-child), .iq-test:not(:last-child) {
+    border-bottom: 1px solid #e0e0e0;
+}
